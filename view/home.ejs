@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter list</title>
+    <link rel="stylesheet" href="/css/layout.css">
+</head>
+
+     <h1>POTTING LIST</h1>
+
+<form action="/createvote" method="post"><br><br>
+
+    <input class="long" type="text" name="Name" placeholder="Name"><br><br>
+    <input class="long" type="text" name="Id" placeholder="Enter Id"><br><br>
+     <input class="middle" type="submit" value="Add">
+
+</form>
+ 
+<div>
+    <ul>
+
+       
+        <% for (let i of  Voter_list) { %> 
+            <li>
+                 <div> 
+                <p><%= i.Name %></p>
+                <p><%= i.Id %></p>
+            </div>
+
+            </li>
+    
+            <%}%>
+    
+    
+    </ul>
+</div> 
+
+</body>
+</html>

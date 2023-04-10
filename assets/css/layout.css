@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    text-align: center;
+    background-color: aqua;
+}
+.long{
+    height: 30px;
+    width: 300px;
+}
+.middle{
+    height: 30px;
+    width: 150px;
+}
